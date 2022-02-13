@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+#include<climits>
+int linearSearch(int arr[],int n,int key){
+	for(int i=0;i<n;i++){
+		if(key==arr[i]){
+			return i;
+		}
+	}
+	return -1;
+}
+using namespace std;
+int main(){
+	int n;
+	cin>>n;
+	int arr[n];
+	for(int i=0;i<n;i++){
+		cin>>arr[i];
+	}
+	int key;
+	cin>>key;
+	cout<<linearSearch(arr,n,key);
+}
